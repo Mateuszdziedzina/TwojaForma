@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+		id          = "myfirstapp"
+        version     = "1.0.0" >
+
+    <name>Twoja Forma</name>
+    <description>Aplikacja treningowa</description>
+    <author href="http://mypersonalwebsite.com" email="johnbrown@gmail.com">
+		John Brown
+	</author>
+	<platform name="android" />
+	
+
+
+    <preference name="DisallowOverscroll" value="true" />
+    
+
+	<plugin name="cordova-plugin-console" spec="1.0.7" />
+	
+	<plugin name="cordova-plugin-device" spec="1.1.7" />
+	
+	<plugin name="cordova-plugin-dialogs" spec="1.3.4" />
+	
+	<plugin name="cordova-plugin-geolocation" spec="2.4.3" />
+	
+	<plugin name="cordova-plugin-request-location-accuracy" spec="2.2.3" />
+	
+	<plugin name="cordova-plugin-statusbar" spec="1.0.1" />
+	
+	<plugin name="cordova-plugin-whitelist" spec="1.2.2" />
+	
+	<plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" spec="3.2.2" />
+    
+
+</widget>
