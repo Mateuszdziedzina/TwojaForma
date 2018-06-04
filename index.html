@@ -16,19 +16,39 @@
 	
 	<body>
 	<div data-role="page" id="mainPage">
-	
-		<div data-role="header">
-			<h1>Twoja Forma</h1>
-		</div>
 		
-		<div role="main" class="ui-content">
+			<div data-role="header">
+				<h1>Twoja Forma</h1>
+			</div>
+			
+			<div role="main" class="ui-content">
+				<a href="#treningPlan" class="ui-btn ui-btn-corner ui-corner-all ui-shadow">Plan treningowy</a>
+				<a href="#calculatorPage" class="ui-btn ui-btn-corner ui-corner-all ui-shadow">Kalkulator</a>
+				<a href="#personalInfo" class="ui-btn ui-btn-corner ui-corner-all ui-shadow">Dane użytkownika</a>
+				
+	
+				<p>Zanim zaczniesz <a href="#popupInfoBeforeUse" data-rel="popup" data-position-to="window" data-transition="pop"
+					class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext"
+					title="Dowiedz się więcej">Dowiedz się więcej</a>
+				</p>
+					<div data-role="popup" id="popupInfoBeforeUse" class="ui-content" data-theme="a" style="max-width:350px;">
+						<p>Przed pierwszym użyciem aplikacji, uzupełnij podstawowe
+						informacje o sobie w sekcji "Dane użytkownika". Informacje te zostaną zapisane w pamięci.</p>
+					</div>
+			</div>
 
+					
+			<div data-role="footer">
+			
+			<a href="#popupCloseRight" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-corner">Autor</a>
+				<div data-role="popup" id="popupCloseRight" class="ui-content" style="max-width:280px">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+						<p>Autor aplikacji: </p>
+						<p>Mateusz Dziedzina</p>
+
+				</div>
+			</div>		
 		</div>
-	
-		<div data-role="footer">
-		
-		</div>		
-	</div>
 
 	</body>
 </html>
