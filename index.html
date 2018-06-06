@@ -12,7 +12,7 @@
   		<script src="js/pbg.js"></script>
 		
 		<script src="js/LocalStorageSaveGet.js"></script>
-		
+		<script src="js/AppView.js"></script>
 
 				    	
 	</head>
@@ -99,7 +99,7 @@
 				</button>
 				
 				<a href="#savedPersonalData" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" data-position-to="window" data-transition="pop"
-					onclick="">Sprawdź swoje zapisane dane</a>
+					onclick="AppView.showSavedPersonalInfo($('#savedPersonalData'))">Sprawdź swoje zapisane dane</a>
 				<div data-role="popup" id="savedPersonalData">					
 				</div>
 			
