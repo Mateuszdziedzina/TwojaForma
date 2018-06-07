@@ -16,6 +16,12 @@
     };	
 	
 	
+    view.showBMR = function(fieldToShow) {   	 
+    	fieldToShow.html("<p> Twoje podstawowe zapotrzebowanie kaloryczne BMR wynosi: " +
+   	 			Calculator.calculateBMR(localStorage.getItem("myWeight"), localStorage.getItem("myHeight"),
+   	 			localStorage.getItem("myAge"), localStorage.getItem("myGender")) + " kcal</p>"); 	 	
+    };
+	
 
     return view;
 
