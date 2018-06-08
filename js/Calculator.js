@@ -23,6 +23,13 @@ var Calculator = (function(calculatorValue) {
    	 
    	 	return BMR;
     };	
+
+
+	calculatorValue.calculateCPM = function(BMRvalue, activityLevel) {
+   	 	var CPM = BMRvalue*activityLevel;
+   	 	
+   	 	return CPM;
+    };
     
 
     return calculatorValue;
