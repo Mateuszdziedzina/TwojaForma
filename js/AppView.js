@@ -21,7 +21,17 @@
    	 			Calculator.calculateBMR(localStorage.getItem("myWeight"), localStorage.getItem("myHeight"),
    	 			localStorage.getItem("myAge"), localStorage.getItem("myGender")) + " kcal</p>"); 	 	
     };
-	
+
+
+    view.showCPM = function(fieldToShow) {
+    	var BMRvalue = Calculator.calculateBMR(localStorage.getItem("myWeight"), localStorage.getItem("myHeight"),
+   	 			localStorage.getItem("myAge"), localStorage.getItem("myGender"));   		
+    		
+    	fieldToShow.html("<p> Twoje dobowe zapotrzebowanie kaloryczne CPM uwzględniające aktywność fizyczną wynosi: " +
+   	 			Calculator.calculateCPM(BMRvalue, localStorage.getItem("myActivityLevelValue")) + " kcal</p>"); 	 	
+    };
+
+
 
     return view;
 
