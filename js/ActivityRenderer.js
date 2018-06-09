@@ -19,7 +19,12 @@
         }
     }	
 
-
+	
+    function createActivityItem(activity) {
+        _listRoot.innerHTML += createActivityFromTemplate(activity);
+    }	
+	
+	
     function createActivityFromTemplate(activity) {
 		
 		return `<div role="main">
