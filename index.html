@@ -15,7 +15,26 @@
 		<script src="js/AppView.js"></script>
 		<script src="js/Calculator.js"></script>
     	<script src="js/PhotoManager.js"></script>
-  		<script src="js/Activity.js"></script>		
+  		<script src="js/Activity.js"></script>
+
+    	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>  
+		<script type="text/javascript" charset="utf-8">
+		
+	    var pictureSource;   // picture source
+	    var destinationType; // picture destination
+	   
+	    // wait for PhoneGap
+	    document.addEventListener("deviceready", onDeviceReady, false);
+	  
+	    function onDeviceReady() {
+	        pictureSource = navigator.camera.PictureSourceType;
+	        destinationType = navigator.camera.DestinationType;
+	        
+	    }
+
+		</script>
+
+		
 		
 				    	
 	</head>
