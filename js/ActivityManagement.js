@@ -7,6 +7,11 @@ var ActivityManagement = (function(service) {
     }
 
 
+    service.addActivity = function(description, kcalPerHour) {
+        _activities.push(new Activity(description, kcalPerHour));
+    }	
+	
+
     return service;
 
 })(ActivityManagement || {});
