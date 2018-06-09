@@ -37,6 +37,14 @@
     };
 	
 	
+    function updateView() {
+        ActivityRenderer.renderList(ActivityManagement.getActivities());
+        $('[data-role="content1111"]').trigger('create'); //odswieza widok -> dostosowuje dynamicznie
+        //dodawane elementy do wybranego stylu
+    }	
+	
+	
+	
 
 
     return view;
