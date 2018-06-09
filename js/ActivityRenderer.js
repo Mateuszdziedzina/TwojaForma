@@ -2,6 +2,14 @@
 
     var _listRoot = null;
 
+
+    renderer.renderList = function (activities) {
+        initializeRoot();
+
+        for (var i = 0; i < activities.length; i++) {
+            createActivityItem(activities[i]);
+        }
+    };
 	
 	
     function initializeRoot() {
