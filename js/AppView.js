@@ -49,6 +49,11 @@
         updateView();
     };	
 	
+	
+    view.deleteActivity = function(activityId) {
+    	ActivityManagement.deleteActivity(activityId);
+        updateView();
+    };	
 
 
     return view;
