@@ -43,7 +43,11 @@
         //dodawane elementy do wybranego stylu
     }	
 	
-	
+
+    view.addActivity = function() {
+    	ActivityManagement.addActivity($("#activitySelect option:selected").text(), $("#activitySelect").val());
+        updateView();
+    };	
 	
 
 
