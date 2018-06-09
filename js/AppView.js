@@ -60,3 +60,8 @@
 
 
 })(AppView || {});
+
+
+document.addEventListener("deviceready", function(event) {
+    ActivityRenderer.renderList(AppView.getActivities());
+});
