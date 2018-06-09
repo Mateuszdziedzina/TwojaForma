@@ -18,6 +18,16 @@
             _listRoot.removeChild(_listRoot.firstChild);
         }
     }	
+
+
+    function createActivityFromTemplate(activity) {
+		
+		return `<div role="main">
+		
+				</div>`  
+    }
+  	 
+
 	
 	
     return renderer;
