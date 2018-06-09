@@ -31,6 +31,12 @@
    	 			Calculator.calculateCPM(BMRvalue, localStorage.getItem("myActivityLevelValue")) + " kcal</p>"); 	 	
     };
 
+	
+    view.getActivities = function() {
+        return ActivityManagement.getActivities();
+    };
+	
+	
 
 
     return view;
