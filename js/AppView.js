@@ -8,7 +8,13 @@
    	 			"Wiek: " + localStorage.getItem("myAge") + " <br/>" +  	 	
    	 			"Aktywność: " + localStorage.getItem("myActivityLevel") + "</p>"); 	 	
     };
-    
+ 
+
+    view.showCaloriesBurn = function(fieldToShow, timeInMinutes, caloriesBurnPerHour) {	
+    	fieldToShow.html("<p> W czasie " + timeInMinutes + " min spalisz " +
+   	   	 		Calculator.calculateCaloriesBurn(timeInMinutes, caloriesBurnPerHour) + " kcal</p>");
+    };
+ 
 	
 	view.showBMI = function(fieldToShow) {   	 
     	fieldToShow.html("<p> Twoje BMI wynosi: " + Calculator.calculateBMI(localStorage.getItem("myWeight"),
