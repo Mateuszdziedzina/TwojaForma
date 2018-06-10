@@ -55,7 +55,7 @@
 							<a href="#checkCaloriesField" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-shadow"
 								data-position-to="window" data-transition="pop"
 			
-								onclick="">
+								onclick="AppView.showCaloriesBurn($('#checkCaloriesField'), $('#${activity.id}').val(), ${activity.kcalPerHour})">
 									Sprawdź ilość spalonych kalorii</a>
 								<div data-role="popup" id="checkCaloriesField">					
 								</div>				                
