@@ -30,6 +30,14 @@ var Calculator = (function(calculatorValue) {
    	 	
    	 	return CPM;
     };
+
+
+
+    calculatorValue.calculateCaloriesBurn = function(actvityTimeInMinutes, caloriesPerHour) {
+   	 	var calories = (actvityTimeInMinutes*caloriesPerHour)/60;
+   	 	
+   	 	return calories;
+    };
     
 
     return calculatorValue;
