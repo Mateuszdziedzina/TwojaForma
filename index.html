@@ -80,6 +80,39 @@
 			</div>		
 	</div>
 		
+
+
+
+	<div data-role="page" id="timerPage">
+
+		<div data-role="header">
+			<h1>Timer</h1>			
+		</div>
+
+		<div role="main" class="ui-content">
+			
+			<label for="sliderTimeToCountdown">Wykonuj ćwiczenie przez wybraną ilość sekund:</label>
+            <input name="slider-2" id="sliderTimeToCountdown" data-highlight="true" min="0" max="120" value="50" type="range">
+				
+			<button data-enhanced="true" class="ui-button ui-corner-all ui-shadow ui-widget"
+				onclick="">
+				Zacznij odliczanie
+			</button>
+			
+			<div id="countdownValue" style="font-size:200px" align="center"> Go! </div>
+	
+		</div>
+		
+		
+		<div data-role="footer">
+			<a href="#mainPage" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-carat-l">Powrót</a>
+		</div>
+	</div>
+
+
+
+
+
 		
 		
 		
