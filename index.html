@@ -96,7 +96,7 @@
             <input name="slider-2" id="sliderTimeToCountdown" data-highlight="true" min="0" max="120" value="50" type="range">
 				
 			<button data-enhanced="true" class="ui-button ui-corner-all ui-shadow ui-widget"
-				onclick="">
+				onclick="AppView.showCountdownTime($('#sliderTimeToCountdown').val(),$('#countdownValue'))">
 				Zacznij odliczanie
 			</button>
 			
