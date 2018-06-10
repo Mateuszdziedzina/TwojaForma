@@ -24,6 +24,15 @@ var ActivityManagement = (function(service) {
         activity.isCompleted = isCompleted;
     }
 
+	
+    service.getRandomActivity = function() {
+
+    	var activitiesToSelect = ['', 'Brzuszki', 'Skakanka', 'Pajacyki', 'Przysiady', 'Wykroki', 'Pompki', 'Trucht'];
+    	var randomIndex = (Math.floor(Math.random()*7)+1);
+    		
+    	return activitiesToSelect[randomIndex];
+    };	
+	
     return service;
 
 })(ActivityManagement || {});
