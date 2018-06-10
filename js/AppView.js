@@ -44,6 +44,10 @@
     };	    
 
 
+    view.showRandomActivity = function(fieldToShow) {
+    	fieldToShow.html(ActivityManagement.getRandomActivity()); 
+    };		
+	
 	
     view.getActivities = function() {
         return ActivityManagement.getActivities();
