@@ -47,6 +47,14 @@
     view.showRandomActivity = function(fieldToShow) {
     	fieldToShow.html(ActivityManagement.getRandomActivity()); 
     };		
+
+
+    view.showCountdownTimeForRandomActivity = function(timeToCountdown, fieldToShow) {
+    	fieldToShow.html(timeToCountdown);
+    	TimerCountdown.countdownForRandomActivity();
+    };	
+
+
 	
 	
     view.getActivities = function() {
