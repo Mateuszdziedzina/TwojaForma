@@ -16,16 +16,16 @@
     };
  
 	
-	view.showBMI = function(fieldToShow) {   	 
+    view.showBMI = function(fieldToShow) {   	 
     	fieldToShow.html("<p> Twoje BMI wynosi: " + Calculator.calculateBMI(localStorage.getItem("myWeight"),
-   	 			localStorage.getItem("myHeight")) + "</p>");  	
+   	 			localStorage.getItem("myHeight")).toFixed(2) + "</p>");  	
     };	
 	
 	
     view.showBMR = function(fieldToShow) {   	 
     	fieldToShow.html("<p> Twoje podstawowe zapotrzebowanie kaloryczne BMR wynosi: " +
    	 			Calculator.calculateBMR(localStorage.getItem("myWeight"), localStorage.getItem("myHeight"),
-   	 			localStorage.getItem("myAge"), localStorage.getItem("myGender")) + " kcal</p>"); 	 	
+   	 			localStorage.getItem("myAge"), localStorage.getItem("myGender")).toFixed() + " kcal</p>"); 	 	
     };
 
 
@@ -34,7 +34,7 @@
    	 			localStorage.getItem("myAge"), localStorage.getItem("myGender"));   		
     		
     	fieldToShow.html("<p> Twoje dobowe zapotrzebowanie kaloryczne CPM uwzględniające aktywność fizyczną wynosi: " +
-   	 			Calculator.calculateCPM(BMRvalue, localStorage.getItem("myActivityLevelValue")) + " kcal</p>"); 	 	
+   	 			Calculator.calculateCPM(BMRvalue, localStorage.getItem("myActivityLevelValue")).toFixed() + " kcal</p>"); 	 	
     };
 
 
