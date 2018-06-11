@@ -19,7 +19,27 @@ var TimerCountdown = (function(timer) {
     	  }
     	  
       	} ;      
-      
+
+
+
+        timer.countdownForRandomActivity = function () {
+
+      	  timeInSeconds = $('#countdownTimeRandomActivity').html();
+      	  timeInSeconds = parseInt(timeInSeconds, 10);
+      	   
+      	  if (timeInSeconds == 1) {
+      		  $('#countdownTimeRandomActivity').html("0");
+      		  navigator.vibrate(2000);
+      		  return;
+      	  }
+      	  else {
+          	  timeInSeconds--;
+      	      $('#countdownTimeRandomActivity').html(timeInSeconds); 
+      	      setTimeout(timer.countdownForRandomActivity, 1000);   		  
+      	  }
+      	  
+        }; 
+		
 
     return timer;
 
