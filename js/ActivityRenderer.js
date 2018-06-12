@@ -61,7 +61,7 @@
 								</div>				                
 					    
 					        <div>
-					        	<button class="ui-btn ui-corner-all" id="add-activity-btn" onclick="AppView.deleteActivity(${activity.id});">
+					        	<button class="ui-btn ui-corner-all" style="background: #de5459; color: white;" id="add-activity-btn" onclick="AppView.deleteActivity(${activity.id});">
 					        		Usuń
 					        	</button>
 					        </div>
