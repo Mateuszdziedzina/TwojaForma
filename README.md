@@ -5,7 +5,7 @@ Użytkownik będzie mógł wybierać rodzaj treningu i ćwiczeń (np. bieganie, 
 Użytkownik po skończonym treningu będzie potwierdzał jego wykonanie.
 W przypadku niewykonania również będzie miał możliwość zaznaczenia.
 
-## Aplikację można pobrać [tutaj] (https://build.phonegap.com/apps/3201960/install)
+## Aplikację można pobrać [tutaj](https://build.phonegap.com/apps/3201960/install)
 
 # Metoda działania
 
