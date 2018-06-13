@@ -26,13 +26,13 @@ Do wybudowania wersji mobilnej użyta została platforma PhoneGapBuild firmy Ado
 
 # Zrzuty ekranu
 
-![screenshot 01](screenshots/Screenshot1.jpg "01")
-![screenshot 02](screenshots/Screenshot2.jpg "02")
-![screenshot 03](screenshots/Screenshot3.jpg "03")
-![screenshot 04](screenshots/Screenshot4.jpg "04")
-![screenshot 05](screenshots/Screenshot5.jpg "05")
-![screenshot 06](screenshots/Screenshot6.jpg "06")
-![screenshot 07](screenshots/Screenshot7.jpg "07")
-![screenshot 08](screenshots/Screenshot8.jpg "08")
+![screenshot 01](screenshots/01.jpg "01")
+![screenshot 02](screenshots/02.jpg "02")
+![screenshot 03](screenshots/03.jpg "03")
+![screenshot 04](screenshots/04.jpg "04")
+![screenshot 05](screenshots/05.jpg "05")
+![screenshot 06](screenshots/06.jpg "06")
+![screenshot 07](screenshots/07.jpg "07")
+![screenshot 08](screenshots/08.jpg "08")
 
 ## Projekt realizowany na potrzeby przedmiotu Architektura środowisk mobilnych (J. Stal)
