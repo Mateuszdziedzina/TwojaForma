@@ -1,38 +1,45 @@
-﻿var ActivityRenderer = (function (renderer) {
+﻿/* module to render activities */
 
-    var _listRoot = null;
+var ActivityRenderer = (function (renderer) {
 
+    var _listRoot = null;												/* private variable - root of the list */
 
-    renderer.renderList = function (activities) {
-        initializeRoot();
+	
+	/* public function to render the list of activities */
+    renderer.renderList = function (activities) {						
+        initializeRoot();												/* initialize root of the list */							
 
         for (var i = 0; i < activities.length; i++) {
-            createActivityItem(activities[i]);
+            createActivityItem(activities[i]);							/* create the collection of activities */
         }
     };
 	
-	
+
+	/* private function to initialize root of the list */	
     function initializeRoot() {
-        if (!_listRoot) {
-        	_listRoot = document.getElementById("activity-list-root");
-        } else {
-            clearItems();
+        if (!_listRoot) {												/* check if root is already set */
+        	_listRoot = document.getElementById("activity-list-root");	/* set root of list to the element "activity-list-root" */
+        } else {														
+            clearItems();												/* clear the list of activities*/
         }
     }	
 
-	
+
+	/* private function to clear the list */
     function clearItems() {
-        while (_listRoot.firstChild) {
+        while (_listRoot.firstChild) {									/* remove elements until all elements are removed */
             _listRoot.removeChild(_listRoot.firstChild);
         }
     }	
 
-	
+
+	/* private function to create activity structure from template and add it to the root and other elements */
     function createActivityItem(activity) {
         _listRoot.innerHTML += createActivityFromTemplate(activity);
     }	
 	
-	
+
+	/* private function to create the activity from layout template */
     function createActivityFromTemplate(activity) {
 		
 		return `<div role="main">

@@ -1,14 +1,19 @@
+/* module to calculate values */
+
 var Calculator = (function(calculatorValue) {
-    
+ 
+	/* function to calculate BMI value based on weight in kilograms and height in centimeters */
     calculatorValue.calculateBMI = function(weightInKilograms, heightInCentimeters) {   	 
-   	 	var heightInMeters = heightInCentimeters/100;
+   	 	
+		var heightInMeters = heightInCentimeters/100;
    	 
    	 	var BMI = weightInKilograms/(heightInMeters*heightInMeters);
    	 	
    	 	return BMI;
     };
 	
-		
+
+	/* function to calculate BMR value based on weight in kilograms and height in centimeters, age and gender*/
     calculatorValue.calculateBMR = function(weightInKilograms, heightInCentimeters, age, gender) {
    	 	var BMR = 0;
    	 	
@@ -25,6 +30,7 @@ var Calculator = (function(calculatorValue) {
     };	
 
 
+	/* function to calculate CPM value based on BMR value and activity level */
 	calculatorValue.calculateCPM = function(BMRvalue, activityLevel) {
    	 	var CPM = BMRvalue*activityLevel;
    	 	
@@ -32,7 +38,8 @@ var Calculator = (function(calculatorValue) {
     };
 
 
-
+	/* function to calculate the amount of burned calories based on activity time in minutes and
+	   value of calories burn per hour */
     calculatorValue.calculateCaloriesBurn = function(actvityTimeInMinutes, caloriesPerHour) {
    	 	var calories = (actvityTimeInMinutes*caloriesPerHour)/60;
    	 	
