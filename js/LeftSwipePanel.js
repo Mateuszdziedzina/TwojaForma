@@ -44,6 +44,13 @@ $( document ).on( "pagecreate", $('div[data-role="page"]'), function() {	/* acti
 				$( "#leftPanelForTreningPlanPage").panel( "open" );
 			}
 		}
-	}	     			     			
+	}
+	else if ($( ".ui-page-active" ).attr("id") == "exercises") {
+		if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+			if ( e.type === "swiperight" ) {
+				$( "#leftPanelForExercisesPage").panel( "open" );
+			}
+		}
+	}	
 	});
 });
