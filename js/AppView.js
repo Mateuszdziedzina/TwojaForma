@@ -91,7 +91,7 @@ var AppView = (function(view) {
 		   from get activities */
         ActivityRenderer.renderList(ActivityManagement.getActivities());
 		/* refresh view and adapt it to main style used in application */
-        $('[data-role="content1111"]').trigger('create');
+        $('[data-role="activityListPlan"]').trigger('create');
     }	
 	
 
